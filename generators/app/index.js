@@ -11,10 +11,10 @@ module.exports = yeoman.Base.extend({
     ));
 
     return this.prompt([{
-      type    : 'input',
-      name    : 'name',
-      message : 'Your project name',
-      default : this.appname // Default to current folder name
+      type: 'input',
+      name: 'name',
+      message: 'Your project name',
+      default: this.appname // Default to current folder name
     }]).then(function (answers) {
       this.log('app name', answers.name);
     }.bind(this));

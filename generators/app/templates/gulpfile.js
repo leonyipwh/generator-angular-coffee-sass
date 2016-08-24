@@ -6,7 +6,7 @@ const del = require('del');
 const wiredep = require('wiredep').stream;
 
 const browserify = require('gulp-browserify');
-const rename = require("gulp-rename");
+const rename = require('gulp-rename');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -27,7 +27,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('coffee', () => {
-  return gulp.src('app/scripts/main.coffee', { read: false })
+  return gulp.src('app/scripts/main.coffee', {read: false})
     .pipe($.plumber())
     .pipe(browserify({
       transform: ['coffeeify'],
@@ -85,10 +85,14 @@ gulp.task('images', () => {
 });
 
 gulp.task('fonts', () => {
-  return gulp.src(require('main-bower-files')('**/*.{eot,svg,ttf,woff,woff2}', function (err) {})
-    .concat('app/fonts/**/*'))
-    .pipe(gulp.dest('.tmp/fonts'))
-    .pipe(gulp.dest('dist/fonts'));
+  return gulp.src(require('main-bower-files')('**/*.{eot,svg,ttf,woff,woff2}', function (error) {
+    if (error) {
+      return console.log(error);
+    }
+  })
+  .concat('app/fonts/**/*'))
+  .pipe(gulp.dest('.tmp/fonts'))
+  .pipe(gulp.dest('dist/fonts'));
 });
 
 gulp.task('extras', () => {
