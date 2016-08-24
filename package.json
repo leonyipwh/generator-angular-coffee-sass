@@ -1,7 +1,7 @@
 {
   "name": "generator-angular-coffee-sass",
   "version": "1.2.1",
-  "description": "Yeoman Generator",
+  "description": "Quick start webapp with AngualrJS, coffeescript, sass, underscoreJS",
   "homepage": "",
   "author": {
     "name": "Leon Yip",
