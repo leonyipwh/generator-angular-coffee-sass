@@ -1,5 +1,21 @@
 # generator-angular-coffee-sass [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> 
+
+> Quick start webapp with AngualrJS, coffeescript, sass, underscoreJS
+
+
+## Features
+
+Please see our [gulpfile](app/templates/gulpfile.js) for up to date information on what we support.
+
+* Browserify with AngualrJS v1.5.8 and underscoreJS
+* enable [ES2015 features](https://babeljs.io/docs/learn-es2015/) using [Babel](https://babeljs.io)
+* CSS Autoprefixing
+* Built-in preview server with BrowserSync
+* Automagically compile Sass
+* Automagically lint your scripts
+* Map compiled CSS to source stylesheets with source maps
+* Automagically wire-up dependencies installed with [Bower](http://bower.io)
+
 
 ## Installation
 
@@ -16,12 +32,12 @@ Then generate your new project:
 yo angular-coffee-sass
 ```
 
-## Getting To Know Yeoman
+## Getting Started
 
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
+- DEV: `gulp serve`
+
+- DEPLOY: `gulp release`
+
 
 ## License
 
