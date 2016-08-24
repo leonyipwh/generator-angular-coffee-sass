@@ -1,7 +1,7 @@
 {
   "name": "generator-angular-coffee-sass",
   "version": "1.1.0",
-  "description": "",
+  "description": "Yeoman Generator",
   "homepage": "",
   "author": {
     "name": "Leon Yip",
