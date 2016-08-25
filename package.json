@@ -8,7 +8,7 @@
     "email": "leonyipwh@hotmail.com",
     "url": ""
   },
-  "repository": "https://github.com/leonyipwh/generator-angular-coffee-sass",
+  "repository": "leonyipwh/generator-angular-coffee-sass",
   "files": [
     "generators"
   ],
