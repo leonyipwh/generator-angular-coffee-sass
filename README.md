@@ -1,5 +1,6 @@
-# generator-angular-coffee-sass [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url][![Download Month]
+# generator-angular-coffee-sass [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Download Month](http://img.shields.io/npm/dm/generator-angular-coffee-sass.svg?style=flat-square)](https://www.npmjs.org/package/generator-angular-coffee-sass)
 
+[![NPM](https://nodei.co/npm/generator-angular-coffee-sass.png)](https://npmjs.org/package/generator-angular-coffee-sass)
 > Quick start webapp with AngualrJS, coffeescript, sass, underscoreJS
 
 
