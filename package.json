@@ -1,6 +1,6 @@
 {
   "name": "generator-angular-coffee-sass",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "description": "Quick start webapp with AngualrJS, coffeescript, sass, underscoreJS",
   "homepage": "https://github.com/leonyipwh/generator-angular-coffee-sass",
   "author": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/leonyipwh/generator-angular-coffee-sass"
+    "url": "https://github.com/leonyipwh/generator-angular-coffee-sass.git"
   },
   "files": [
     "generators"
