@@ -1,5 +1,5 @@
 {
-  "name": "project-name",
+  "name": "<%= projectName %>",
   "version": "0.1.0",
   "description": "",
   "devDependencies": {
@@ -30,6 +30,18 @@
   },
   "dependencies": {
     "angular": "^1.5.8",
+    <% if (includeAngularRoute) { %>
+      "angular-route": "^1.5.7",
+    <% } %>
+    <% if (includeAngularResource) { %>
+      "angular-resource": "^1.5.7",
+    <% } %>
+    <% if (includeAngularAnimate) { %>
+      "angular-animate": "^1.5.7",
+    <% } %>
+    <% if (includeAngularClickOutside) { %>
+      "angular-click-outside": "^1.2.0",
+    <% } %>
     "coffeeify": "^2.0.1",
     "gulp-rename": "^1.2.2",
     "underscore": "^1.8.3",
