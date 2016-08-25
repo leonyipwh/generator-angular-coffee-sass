@@ -6,7 +6,6 @@ var mkdirp = require('mkdirp');
 
 module.exports = yeoman.Base.extend({
   prompting: function () {
-
     var done = this.async();
 
     // Have Yeoman greet the user.
@@ -64,29 +63,28 @@ module.exports = yeoman.Base.extend({
             checked: true
           }
         ]
-      },
+      }
     ]).then(function (answers) {
       var features = answers.features;
 
       function hasFeature(feat) {
         return features && features.indexOf(feat) !== -1;
-      };
-
+      }
       this.projectName = hasFeature('projectName');
       this.features = hasFeature('features');
 
       // Angular Modules
       var angularModules = answers.angularModules;
+
       function hasAngularModules(feat) {
         return angularModules && angularModules.indexOf(feat) !== -1;
-      };
+      }
       this.includeAngularRoute = hasAngularModules('includeAngularRoute');
       this.includeAngularResource = hasAngularModules('includeAngularResource');
       this.includeAngularAnimate = hasAngularModules('includeAngularAnimate');
       this.includeAngularClickOutside = hasAngularModules('includeAngularClickOutside');
 
       done();
-
     }.bind(this));
   },
 
@@ -113,7 +111,7 @@ module.exports = yeoman.Base.extend({
     this.fs.copy(
       this.templatePath('app/_sass/**/*'),
       this.destinationPath('app/_sass'),
-      { globOptions: { dot: true } }
+      {globOptions: {dot: true}}
     );
 
     // controllers files
@@ -146,7 +144,7 @@ module.exports = yeoman.Base.extend({
       this.templatePath('bower.json'),
       this.destinationPath('bower.json'),
       {
-        projectName: this.projectName,
+        projectName: this.projectName
       }
     );
 

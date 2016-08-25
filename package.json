@@ -19,36 +19,30 @@
     "underscore",
     "yeoman-generator"
   ],
+  "scripts": {
+    "test": "mocha --reporter spec --timeout 3000"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "dependencies": {
     "chalk": "^1.0.0",
+    "deep-extend": "^0.4.0",
+    "generator-node": "^1.7.0",
+    "inquirer-npm-name": "^2.0.0",
+    "lodash": "^4.6.1",
     "mkdirp": "^0.5.1",
-    "yeoman-generator": "^0.24.1",
-    "yosay": "^1.0.0"
+    "superb": "^1.0.0",
+    "yeoman-assert": "^2.1.1",
+    "yeoman-generator": "^0.23.3",
+    "yosay": "^1.0.2"
   },
   "devDependencies": {
-    "yeoman-test": "^1.0.0",
+    "mocha": "*",
+    "mockery": "^1.4.0",
     "yeoman-assert": "^2.0.0",
-    "eslint": "^3.1.1",
-    "eslint-config-xo-space": "^0.14.0",
-    "gulp": "^3.9.0",
-    "gulp-eslint": "^3.0.1",
-    "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-line-ending-corrector": "^1.0.1",
-    "gulp-istanbul": "^1.0.0",
-    "gulp-mocha": "^3.0.1",
-    "gulp-plumber": "^1.0.0",
-    "gulp-nsp": "^2.1.0"
-  },
-  "eslintConfig": {
-    "extends": "xo-space",
-    "env": {
-      "mocha": true
-    }
-  },
-  "repository": "leonyipwh/generator-angular-coffee-sass",
-  "scripts": {
-    "prepublish": "gulp prepublish",
-    "test": "gulp"
+    "yeoman-test": "^1.0.0",
+    "pinkie-promise": "^2.0.1"
   },
   "license": "MIT"
 }

@@ -1,4 +1,4 @@
-# generator-angular-coffee-sass [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-angular-coffee-sass [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url][![Download Month]
 
 > Quick start webapp with AngualrJS, coffeescript, sass, underscoreJS
 
