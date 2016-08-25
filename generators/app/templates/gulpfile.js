@@ -12,7 +12,7 @@ const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 gulp.task('styles', () => {
-  return gulp.src('app/styles/*.sass')
+  return gulp.src('app/_sass/*.sass')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.sass.sync({
@@ -27,7 +27,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('coffee', () => {
-  return gulp.src('app/scripts/main.coffee', {read: false})
+  return gulp.src('app/_coffee/main.coffee', {read: false})
     .pipe($.plumber())
     .pipe(browserify({
       transform: ['coffeeify'],
@@ -125,8 +125,8 @@ gulp.task('serve', ['styles', 'coffee', 'fonts'], () => {
     '.tmp/scripts/**/*.js'
   ]).on('change', reload);
 
-  gulp.watch('app/styles/**/*.sass', ['styles']);
-  gulp.watch('app/scripts/**/*.coffee', ['coffee', reload]);
+  gulp.watch('app/_sass/**/*.sass', ['styles']);
+  gulp.watch('app/_coffee/**/*.coffee', ['coffee', reload]);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
 });
