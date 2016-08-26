@@ -10,7 +10,7 @@ module.exports = yeoman.Base.extend({
 
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the unreal ' + chalk.red('generator-angular-coffee-sass') + ' generator!'
+      'Welcome to the ' + chalk.red('generator-angular-coffee-sass') + ' generator!'
     ));
 
     return this.prompt([
@@ -46,27 +46,30 @@ module.exports = yeoman.Base.extend({
             checked: true
           }
         ]
-      },
-      {
-        type: 'checkbox',
-        name: 'features',
-        message: 'Which additional features would you like to include?',
-        choices: [
-          {
-            name: 'imagCMS',
-            value: 'imagCMS',
-            checked: true
-          },
-          {
-            name: 'imagTranslate',
-            value: 'imagTranslate',
-            checked: true
-          }
-        ]
       }
+      // {
+      //   type: 'checkbox',
+      //   name: 'features',
+      //   message: 'Which additional features would you like to include?',
+      //   choices: [
+      //     {
+      //       name: 'imagCMS',
+      //       value: 'imagCMS',
+      //       checked: true
+      //     },
+      //     {
+      //       name: 'imagTranslate',
+      //       value: 'imagTranslate',
+      //       checked: true
+      //     }
+      //   ]
+      // }
     ]).then(function (answers) {
-      var features = answers.features;
 
+      this.appname = answers.projectName
+
+      // Features
+      var features = answers.features;
       function hasFeature(feat) {
         return features && features.indexOf(feat) !== -1;
       }
@@ -75,7 +78,6 @@ module.exports = yeoman.Base.extend({
 
       // Angular Modules
       var angularModules = answers.angularModules;
-
       function hasAngularModules(feat) {
         return angularModules && angularModules.indexOf(feat) !== -1;
       }
@@ -86,6 +88,10 @@ module.exports = yeoman.Base.extend({
 
       done();
     }.bind(this));
+  },
+
+  paths: function () {
+    this.destinationRoot(this.appname+'/');
   },
 
   copyFiles: function () {
