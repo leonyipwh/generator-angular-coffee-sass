@@ -22,16 +22,37 @@ Please see our [gulpfile](app/templates/gulpfile.js) for up to date information 
 
 First, install [Yeoman](http://yeoman.io) and generator-angular-coffee-sass using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
-```bash
+
+```
 npm install -g yo
 npm install -g generator-angular-coffee-sass
 ```
 
+
 Then generate your new project:
 
-```bash
+```
 yo angular-coffee-sass
 ```
+
+
+Yeoman will create a project with the following structure:
+
+    .
+    ├── app
+    │   │── _coffee
+    │   │── _sass
+    │   │── fonts
+    │   │── images
+    │   │── views
+    │   └── index.html
+    ├── node_modules
+    ├── bower_components
+    ├── test
+    ├── .gitignore
+    ├── bower.json
+    ├── package.json
+    └── gulpfile.js
 
 ## Getting Started
 
